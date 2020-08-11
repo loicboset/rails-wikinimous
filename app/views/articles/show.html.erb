@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="article_container__title">
+    <h1> <%= @article.title %> </h1>
+    <div>
+      <%= link_to edit_article_path(@article) do %>
+        <i class="fas fa-edit"></i>
+      <% end %>
+      <i class="fas fa-trash"></i>
+    </div>
+  </div>
+  <div class="article_container__content">
+    <p><%= @article.content %></p>
+  </div>
+</div>
